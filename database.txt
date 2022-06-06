@@ -1,0 +1,6 @@
+drop database groupchat;create database groupchat;use groupchat;
+create table userinfo(id int(4) primary key auto_increment,name varchar(30),username varchar(30),password varchar(30),utype varchar(10));
+create table message(id int(4) primary key auto_increment,uid varchar(20),message text);
+insert into userinfo(name,username,password,utype)values('Isaac Limbu','isaac500','admin','admin');
+insert into userinfo(name,username,password,utype)values('Kritesh Thapa','kritesh01','user','user');
+select*from userinfo;
